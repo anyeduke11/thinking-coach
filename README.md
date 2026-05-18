@@ -1,105 +1,110 @@
-# 🧠 GROW Coaching Thinking Model Guide
+# 🧠 GROW教练式思维模型引导器
+
+<p align="right">
+  <b>🌐 语言 / Language:</b>
+  <a href="./README.md"><b>🇨🇳 中文</b></a> | 
+  <a href="./README_EN.md">🇺🇸 English</a>
+</p>
 
 [![Version](https://img.shields.io/badge/version-v1.6-blue.svg)](https://github.com/anyeduke11/thinking-coach/releases/tag/v1.6)
 [![License](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
-[![Models](https://img.shields.io/badge/models-94-orange.svg)](#core-features)
-[![Scenarios](https://img.shields.io/badge/scenarios-9-purple.svg)](#core-features)
-[![Bilingual](https://img.shields.io/badge/lang-CN%20%2F%20EN-red.svg)](#bilingual-support)
+[![Models](https://img.shields.io/badge/models-94-orange.svg)](#核心功能)
+[![Scenarios](https://img.shields.io/badge/scenarios-9-purple.svg)](#核心功能)
+[![Bilingual](https://img.shields.io/badge/lang-CN%20%2F%20EN-red.svg)](#双语支持)
 
-> An AI Skill that helps you practice thinking models and solve real-world problems through structured coaching conversations.
+> 一个通过结构化对话帮助你练习思维模型、解决实际问题的 AI Skill。
 
-When you face challenges in reporting, decision-making, or problem analysis, it uses the **GROW Model** (Goal-Reality-Options-Will) combined with tools like **Root Cause Analysis** and **Second-Order Thinking** to guide you step-by-step through your thinking process and produce actionable solutions.
+当你面临汇报、决策、问题分析等场景时，它会使用 **GROW 模型**（Goal-Reality-Options-Will）配合 **根因分析**、**二阶思维** 等工具，一个阶段一个阶段引导你完成思考，最终产出可执行的方案。
 
-**🌐 Bilingual Support**: Supports both Chinese and English with automatic language detection.
-
----
-
-## 📋 Table of Contents
-
-- [Core Features](#core-features)
-- [Bilingual Support](#bilingual-support)
-- [Quick Start](#quick-start)
-- [Usage Examples](#usage-examples)
-- [Model Combinations](#model-combinations)
-- [Visual Learning Reports](#visual-learning-reports)
-- [File Structure](#file-structure)
-- [Version History](#version-history)
-- [Installation](#installation)
+**🌐 双语支持**：支持中文和英文，自动检测用户语言并切换。
 
 ---
 
-## ✨ Core Features
+## 📋 目录
 
-### 📚 94 Curated Thinking Models
+- [核心功能](#核心功能)
+- [双语支持](#双语支持)
+- [快速开始](#快速开始)
+- [使用示例](#使用示例)
+- [模型组合推荐](#模型组合推荐)
+- [可视化学习报告](#可视化学习报告)
+- [文件结构](#文件结构)
+- [版本历史](#版本历史)
+- [安装使用](#安装使用)
 
-94 practical thinking models selected from 363, organized into 9 strategic scenarios:
+---
 
-| Scenario | Models | Core Ability | Example Models |
-|----------|--------|-------------|----------------|
-| S01 Cognitive Calibration | 12 | Identify thinking biases | Confirmation Bias, Anchoring Effect, Availability Heuristic |
-| S02 Learning & Growth | 10 | Accelerate skill acquisition | Feynman Technique, Deliberate Practice, Pareto Principle |
-| S03 Problem Solving | 10 | Break through complex problems | Root Cause Analysis, First Principles, Inversion |
-| S04 Systems Insight | 10 | Understand complex systems | Flywheel Effect, Second-Order Thinking, Feedback Loops |
-| S05 Data & Evidence | 10 | Evaluate data reliability | Correlation ≠ Causation, Base Rate Fallacy, Bayes' Theorem |
-| S06 Decision Analysis | 12 | Weigh trade-offs | Decision Matrix, Opportunity Cost, Expected Value |
-| S07 Conflict Resolution | 10 | Navigate conflicts | Game Theory, BATNA, Principled Negotiation |
-| S08 Potential Release | 10 | Unlock team potential | Pygmalion Effect, Maslow's Hierarchy, Social Proof |
-| S09 Market Strategy | 10 | Build competitive advantage | Economic Moat, Network Effects, Blue Ocean Strategy |
+## ✨ 核心功能
 
-### 🎯 Smart Scenario Detection
+### 📚 94个精选思维模型
 
-Automatically identifies the scenario from your problem and recommends the best thinking models:
+从 363 个思维模型中精选 94 个最实用的模型，覆盖 9 大策略场景：
+
+| 场景 | 模型数 | 核心能力 | 示例模型 |
+|-----|-------|---------|---------|
+| S01 认知校准 | 12 | 识别思维盲区 | 确认偏误、锚定效应、可得性偏差 |
+| S02 学习提升 | 10 | 高效掌握新技能 | 费曼学习法、刻意练习、帕累托法则 |
+| S03 问题解决 | 10 | 突破复杂难题 | 根因分析、第一性原理、逆向思维 |
+| S04 系统洞察 | 10 | 看清全局规律 | 飞轮效应、二阶思维、反馈回路 |
+| S05 数据判断 | 10 | 理性分析决策 | 相关性≠因果性、基础比率、贝叶斯定理 |
+| S06 决策分析 | 12 | 权衡利弊选择 | 决策矩阵、机会成本、期望价值 |
+| S07 冲突应对 | 10 | 处理矛盾谈判 | 博弈论、BATNA、原则性谈判 |
+| S08 潜能释放 | 10 | 团队沟通管理 | 皮格马利翁效应、马斯洛需求层次、社会认同 |
+| S09 市场策略 | 10 | 竞争差异优势 | 护城河、网络效应、转换成本 |
+
+### 🎯 场景化智能推荐
+
+根据你的问题自动识别场景，推荐最合适的思维模型：
 
 ```
-User: I need to report a project delay to leadership. How should I frame it?
-  ↓
-Skill: Detected [S08 Potential Release + S01 Cognitive Calibration]
-     → Recommended: Framing Effect, Sunk Cost Fallacy
-     → Starting GROW coaching session...
+用户：我要跟领导汇报项目延期，怎么组织语言？
+     ↓
+Skill：检测到【S08潜能释放 + S01认知校准】场景
+     → 推荐「框架效应」「沉没成本谬误」
+     → 启动 GROW 教练式引导
 ```
 
-### 🔗 Model Combinations
+### 🔗 模型组合推荐
 
-12 classic model combinations for complex problems that require multi-model analysis:
+12个经典模型组合，用于复杂问题的多模型协同分析：
 
-| Combo | Models | Best For |
-|-------|--------|----------|
-| C01 Deep Diagnosis | Root Cause + Flywheel + Confirmation Bias | Complex problem analysis |
-| C02 Rational Decision | Decision Matrix + Sunk Cost + First Principles | Major choices |
-| C03 Data Judgment | Correlation ≠ Causation + Availability + Base Rate | Information verification |
-| C04 Conflict Resolution | Game Theory + Framing + Reciprocity | Negotiations |
-| C05 Rapid Learning | Feynman + Pareto + Deliberate Practice | Skill breakthrough |
-| C06 Systems Thinking | Flywheel + Second-Order + Inversion | Global insight |
-| C07 Innovation | First Principles + Lateral Thinking + Redefine | New solutions |
-| C08 Risk Assessment | Second-Order + Black Swan + Scenario Analysis | Pre-action evaluation |
-| C09 Team Motivation | Pygmalion + Maslow + Social Proof | Management |
-| C10 Competitive Edge | Moat + Network Effects + Switching Costs | Business strategy |
-| C11 Persuasive Reporting | Framing + Sunk Cost + Cost-Benefit | Upward communication |
-| C12 Self-Breakthrough | Growth Mindset + Impostor + Deliberate Practice | Personal growth |
+| 组合 | 模型 | 适用场景 |
+|-----|------|---------|
+| C01 深度诊断 | 根因分析+飞轮效应+确认偏误 | 复杂问题分析 |
+| C02 理性决策 | 决策矩阵+沉没成本+第一性原理 | 重大选择 |
+| C03 数据判断 | 相关性≠因果+可得性偏差+基础比率 | 信息验证 |
+| C04 冲突化解 | 博弈论+框架效应+互惠 | 谈判/矛盾 |
+| C05 快速学习 | 费曼学习法+帕累托法则+刻意练习 | 技能突破 |
+| C06 系统思考 | 飞轮+惯性+二阶思维+逆向思维 | 全局洞察 |
+| C07 创新突破 | 第一性原理+横向思维+重新定义 | 新方案 |
+| C08 风险评估 | 二阶思维+黑天鹅+情景分析 | 行动预判 |
+| C09 团队激励 | 皮格马利翁+马斯洛+社会认同 | 管理场景 |
+| C10 竞争优势 | 护城河+网络效应+转换成本 | 商业策略 |
+| C11 汇报说服 | 框架效应+沉没成本+成本收益 | 向上沟通 |
+| C12 自我突破 | 成长型思维+冒名顶替+刻意练习 | 个人成长 |
 
-### 📊 Learning Tracking
+### 📊 学习追踪系统
 
-- Automatically records every coaching session
-- Tracks model usage and scenario coverage
-- Generates growth reports (Markdown + visual charts)
-- 6-level mastery tracking (Unaware → Novice → Practicing → Proficient → Master → Expert)
+- 每次对话自动记录使用的模型和场景
+- 生成思维成长报告（Markdown + 可视化图表）
+- 6级掌握度追踪（未接触 → 入门 → 练习 → 熟练 → 精通 → 专家）
 
 ---
 
-## 🌐 Bilingual Support
+## 🌐 双语支持
 
-### Automatic Language Detection
+### 自动语言检测
 
-The Skill automatically detects your language from your first message and switches accordingly.
+Skill 自动检测用户首次输入的语言（中文/英文），整个对话使用该语言进行。
 
-### Manual Language Switch
+### 手动语言切换
 
-| Command | Function |
-|---------|----------|
-| `/lang cn` | Switch to Chinese mode |
-| `/lang en` | Switch to English mode |
+| 命令 | 功能 |
+|-----|------|
+| `/lang cn` 或 `/lang 中文` | 切换到中文模式 |
+| `/lang en` 或 `/lang English` | Switch to English mode |
 
-### English Mode Example
+### 英文模式示例
 
 ```
 User: I need to report a project delay to leadership. How should I frame it?
@@ -129,211 +134,236 @@ Skill: [R Phase] Let's use the "Framing Effect" to restructure your message:
 
 ---
 
-## 🚀 Quick Start
+## 🚀 快速开始
 
-### Method 1: Just Ask
+### 方式一：直接提问
 
-Describe your problem and the Skill will automatically detect the scenario:
-
-```
-User: I have two job offers with a 30% salary difference. How do I choose?
-```
-
-### Method 2: Specify a Model
+直接描述你的问题，Skill 会自动识别场景并开始引导：
 
 ```
-User: Help me analyze this decision using a Decision Matrix
+用户：拿到两个offer，薪资差30%，怎么选？
 ```
 
-### Method 3: Review Progress
+### 方式二：指定场景
 
 ```
-User: /review
+用户：帮我用决策矩阵分析一下要不要跳槽
 ```
 
----
-
-## 💡 Usage Examples
-
-### Example 1: Reporting Bad News
+### 方式三：查看学习报告
 
 ```
-User: Project is delayed. How do I tell my boss?
-
-Skill: This involves [Upward Communication]. I recommend using the
-      "Framing Effect" model.
-      
-      [G Phase] What outcome do you want?
-      [R Phase] Let's reframe: problem → opportunity
-      [O Phase] Build your report structure:
-        1. Lead with the solution (positive frame)
-        2. Explain root causes (objective)
-        3. Prevention measures (closed-loop)
-      [W Phase] Practice your delivery
-```
-
-### Example 2: Complex Decision
-
-```
-User: Should I quit my job and start a company?
-
-Skill: 📊 Complex decision detected. Recommending [Rational Decision Combo]
-      
-      | Step | Model | Purpose |
-      |------|-------|---------|
-      | 1️⃣ | Sunk Cost Fallacy | Check if past investment is biasing you |
-      | 2️⃣ | First Principles | Strip to fundamentals |
-      | 3️⃣ | Decision Matrix | Quantify the comparison |
+用户：/review
 ```
 
 ---
 
-## 📈 Visual Learning Reports
+## 💡 使用示例
 
-Generate visual learning reports with 3 chart types:
+### 示例1：汇报坏消息
 
-| Chart | Function | Command |
-|-------|----------|---------|
-| 9-Scenario Radar Chart | See mastery across all scenarios at a glance | `/review --radar` |
-| Growth Curve | Track progress over time | `/review --curve` |
-| Weakness Heatmap | 5-dimension assessment matrix | `/review --heatmap` |
+```
+用户：项目延期了，要跟领导汇报，怎么说？
+
+Skill：这个问题涉及【向上沟通】，我推荐用「框架效应」模型来组织语言。
+
+      【G阶段】你希望领导听完汇报后：
+      A. 理解延期原因，不追究责任
+      B. 同意你的补救方案
+      C. 给予额外资源支持
+      
+      你最希望达成哪个目标？
+      
+用户：B，希望他同意我的补救方案
+
+Skill：【R阶段】让我们用「框架效应」重新框架这个问题：
+      
+      ❌ 负面框架："项目延期了，很抱歉"
+      ✅ 正面框架："发现了几个关键问题，已经制定了解决方案"
+      
+      你觉得哪种框架更容易让领导接受你的方案？
+      
+用户：正面框架更好
+
+Skill：【O阶段】现在让我们构建汇报内容：
+      
+      1. 先说解决方案（正面框架）
+      2. 再说问题原因（客观陈述）
+      3. 最后说预防措施（闭环思维）
+      
+      你能试着按这个结构说一下吗？
+      
+用户：[用户练习...]
+
+Skill：【W阶段】很好！你的汇报结构已经成型。
+      
+      下一步行动：
+      1. 准备数据支撑你的方案
+      2. 预演领导可能的提问
+      3. 确定汇报时间
+      
+      需要我帮你完善哪个部分？
+```
+
+### 示例2：复杂决策分析
+
+```
+用户：拿到两个offer，薪资差30%，怎么选？
+
+Skill：📊 检测到复杂决策问题，推荐使用【理性决策组合】
+      
+      这个问题涉及多个维度，我建议用3个模型串联分析：
+      
+      | 步骤 | 模型 | 作用 |
+      |-----|------|------|
+      | 1️⃣ | 沉没成本谬误 | 检查是否受过往投入影响 |
+      | 2️⃣ | 第一性原理 | 剥离所有假设，回到问题本质 |
+      | 3️⃣ | 决策矩阵 | 量化打分，得出推荐 |
+      
+      准备好了吗？
+```
+
+---
+
+## 📈 可视化学习报告
+
+生成可视化学习报告，3张图表直观展示学习状态：
+
+| 图表 | 功能 | 命令 |
+|-----|------|------|
+| 9大场景雷达图 | 一眼看清各场景掌握度百分比 | `/review --radar` |
+| 学习成长曲线 | 时间轴展示进步趋势 | `/review --curve` |
+| 薄弱场景热力图 | 5维度评估矩阵 | `/review --heatmap` |
 
 ```bash
-# Generate all charts
+# 生成全部图表
 python scripts/generate-visual-report.py --data user_profile.json --output ./reports/
 
-# Demo with sample data
+# 使用示例数据演示
 python scripts/generate-visual-report.py --demo
 ```
 
 ---
 
-## 📁 File Structure
+## 📁 文件结构
 
 ```
 thinking-coach/
-├── SKILL.md                              # Core configuration
-├── README.md                             # This file (English)
-├── requirements.txt                      # Python dependencies
+├── SKILL.md                              # 核心配置文件（含双语切换逻辑）
+├── README.md                             # 本文档（中文版）
+├── README_EN.md                          # 英文版文档
+├── requirements.txt                      # Python 依赖
 │
-├── references/                           # Reference documents
-│   ├── thinking-models-library.md        # 94 thinking models (Chinese)
-│   ├── strategy-library.md               # 9 strategic scenarios (Chinese)
-│   ├── model-combinations.md             # 12 model combinations (Chinese)
-│   ├── learning-tracking.md              # Learning tracking system
-│   ├── grow-model-guide.md               # GROW model guide
-│   ├── root-cause-analysis.md            # Root cause analysis guide
-│   ├── second-order-thinking.md          # Second-order thinking guide
-│   ├── report-framework-template.md      # Report framework template
-│   └── coaching-dialog-examples.md       # Coaching dialog examples
+├── references/                           # 参考文档（中文）
+│   ├── thinking-models-library.md        # 94个思维模型库
+│   ├── strategy-library.md               # 9大策略场景库
+│   ├── model-combinations.md             # 12个模型组合库
+│   ├── learning-tracking.md              # 学习追踪机制
+│   ├── grow-model-guide.md               # GROW模型指南
+│   ├── root-cause-analysis.md            # 根因分析指南
+│   └── ...
 │
-├── references/en/                        # English reference documents (v1.6)
-│   ├── thinking-models-library.md        # 94 thinking models (English)
-│   ├── strategy-library.md               # 9 strategic scenarios (English)
-│   └── model-combinations.md             # 12 model combinations (English)
+├── references/en/                        # 参考文档（英文）
+│   ├── thinking-models-library.md        # 94 Thinking Models (English)
+│   ├── strategy-library.md               # 9 Strategic Scenarios (English)
+│   └── model-combinations.md             # 12 Model Combinations (English)
 │
-├── scripts/                              # Automation scripts
-│   ├── generate-visual-report.py         # Visual report generation
-│   ├── generate-report.py                # Markdown report generation
-│   ├── export-to-docx.py                 # Word document export
-│   └── auto-collect.py                   # Conversation data collection
+├── scripts/                              # 自动化脚本
+│   ├── generate-visual-report.py         # 可视化报告生成
+│   ├── generate-report.py                # Markdown报告生成
+│   ├── export-to-docx.py                 # 导出Word文档
+│   └── auto-collect.py                   # 对话数据收集
 │
-└── assets/                               # Template files
-    ├── welcome-notification.md           # Welcome notification
-    ├── user-profile-template.md          # User profile template
-    ├── learning-report-template.md       # Learning report template
-    ├── report-template.md                # Report framework template
-    ├── action-plan-template.md           # Action plan template
-    └── checklist-template.md             # Checklist template
+└── assets/                               # 模板文件
+    ├── welcome-notification.md           # 用户欢迎提示
+    ├── user-profile-template.md          # 用户档案模板
+    ├── learning-report-template.md       # 学习报告模板
+    └── ...
 ```
 
 ---
 
-## 📜 Version History
+## 📜 版本历史
 
-| Version | Key Updates |
-|---------|-------------|
-| **v1.6** | **Bilingual CN/EN support, auto language detection, English reference docs** |
-| **v1.5** | **Model combinations: 12 classic templates, workflow guidance, effect evaluation** |
-| **v1.4** | **Visual learning reports: radar chart, growth curve, weakness heatmap** |
-| **v1.3** | **94 curated models, 9 strategic scenarios, learning tracking system** |
-| **v1.2** | **Fast/Standard modes, flow control commands, auto data collection** |
-| **v1.1** | **GROW coaching framework, root cause analysis embedding** |
-| **v1.0** | **Initial release** |
+| 版本 | 主要更新 |
+|-----|---------|
+| **v1.6** | **中英双语支持：自动语言检测、`/lang`切换命令、英文参考文档、英文README** |
+| **v1.5** | **模型组合推荐：12个经典组合模板、组合工作流引导、组合效果评估** |
+| **v1.4** | **可视化学习报告：9大场景雷达图、学习成长曲线、薄弱场景热力图** |
+| **v1.3** | **94个精选思维模型、9大策略场景、学习追踪系统** |
+| **v1.2** | **快速/标准双模式、流程控制命令、自动对话收集** |
+| **v1.1** | **GROW教练式对话框架、根因分析嵌入** |
+| **v1.0** | **基础版本** |
 
 ---
 
-## 🔧 Installation
+## 🔧 安装使用
 
-### Prerequisites
+### 前置要求
 
-- Python 3.8+ (for running scripts)
-- matplotlib, numpy (for visual reports)
+- Python 3.8+（用于运行脚本）
+- matplotlib、numpy（用于可视化报告）
 
-### Install Dependencies
+### 安装依赖
 
 ```bash
 pip install -r requirements.txt
 ```
 
-### Use in SOLO
+### 在 SOLO 中使用
 
-1. Place the `thinking-coach` folder in your SOLO skills directory
-2. Restart SOLO or refresh the skill list
-3. Just ask a question to trigger the Skill
+1. 将 `thinking-coach` 文件夹放入 SOLO 的 skills 目录
+2. 重启 SOLO 或刷新技能列表
+3. 直接提问即可触发 Skill
 
-### Flow Control Commands
+### 流程控制命令
 
-| Command | Function |
-|---------|----------|
-| `/coach` | Start GROW coaching (standard mode) |
-| `/coach --fast` | Start in fast mode |
-| `/skip` | Skip current step |
-| `/back` | Return to previous phase |
-| `/fast` | Switch to fast mode |
-| `/detail` | Switch to standard mode |
-| `/status` | View current progress |
-| `/export` | Export conversation to document |
-| `/review` | View learning report |
-| `/review --visual` | Generate visual chart report |
-| `/lang cn` | Switch to Chinese |
-| `/lang en` | Switch to English |
-
----
-
-## 🗺️ Roadmap
-
-- [ ] Expand to 120+ thinking models
-- [ ] User-customizable model combinations
-- [ ] Integration with Notion/Obsidian
-- [ ] Mobile-friendly visual reports
-- [ ] Community model library contributions
+| 命令 | 功能 |
+|-----|------|
+| `/coach` | 启动GROW教练模式（标准模式） |
+| `/coach [问题]` | 针对特定问题启动教练模式 |
+| `/coach --fast [问题]` | 快速模式（R阶段追问3层） |
+| `/skip` | 跳过当前步骤，进入下一阶段 |
+| `/back` | 返回上一阶段重新分析 |
+| `/fast` | 切换到快速模式 |
+| `/detail` | 切换到标准模式 |
+| `/status` | 查看当前进度和状态 |
+| `/export` | 生成汇报文档 |
+| `/review` | 查看学习报告（Markdown） |
+| `/review --visual` | 生成可视化图表报告（PNG） |
+| `/lang cn` | 切换到中文模式 |
+| `/lang en` | Switch to English mode |
 
 ---
 
-## 🤝 Contributing
+## 🤝 贡献
 
-Issues and Pull Requests are welcome!
+欢迎提交 Issue 和 Pull Request！
+
+### 开发计划
+
+- [ ] 增加更多思维模型（目标：120个）
+- [ ] 支持用户自定义模型组合
+- [ ] 多语言支持（日文、韩文版）
+- [ ] 与 Notion/Obsidian 集成
 
 ---
 
-## 📄 License
+## 📄 许可证
 
 [MIT License](LICENSE)
 
 ---
 
-## 🙏 Acknowledgments
+## 🙏 致谢
 
-- **Thinking Models**: *Thinking, Fast and Slow*, *Poor Charlie's Almanack*, *Principles* by Ray Dalio
-- **GROW Model**: Sir John Whitmore's coaching framework
-- **SOLO Platform**: Skill runtime environment
+- 思维模型来源：《思考，快与慢》《穷查理宝典》《原则》等经典著作
+- GROW 模型：Sir John Whitmore 的教练技术框架
+- SOLO 平台：提供 Skill 运行环境
 
 ---
 
 <p align="center">
-  <b>Start your thinking training journey today!</b><br>
-  <a href="https://github.com/anyeduke11/thinking-coach/releases/tag/v1.6">⬇️ Download Latest Release</a>
-  &nbsp;|&nbsp;
-  <a href="https://github.com/anyeduke11/thinking-coach/blob/main/README.md">🇨🇳 中文版</a>
+  <b>开始你的思维训练之旅吧！</b><br>
+  <a href="https://github.com/anyeduke11/thinking-coach/releases/tag/v1.6">⬇️ 下载最新版本</a>
 </p>
