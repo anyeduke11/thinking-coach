@@ -1,14 +1,73 @@
 ---
 name: thinking-coach
-description: "GROW教练式思维模型引导器 - 通过结构化对话帮助用户练习思维模型并解决实际问题。内置94个精选思维模型，覆盖9大策略场景（认知偏差、高效学习、问题解决、自然法则、数据判断、决策分析、冲突应对、潜能释放、市场策略），使用GROW模型配合场景化模型推荐，教练式引导用户边用边学。每次使用自动记录训练数据，生成学习追踪报告。触发条件：用户提到'汇报'、'决策'、'分析'、'教练式'、'GROW'、'思维模型'、或任何需要结构化思考的场景。"
-version: 1.5.0
+description: "GROW教练式思维模型引导器 / GROW Coaching Thinking Model Guide - 通过结构化对话帮助用户练习思维模型并解决实际问题。内置94个精选思维模型，覆盖9大策略场景，支持中英双语。Built-in 94 curated thinking models across 9 strategic scenarios, bilingual CN/EN support."
+version: 1.6.0
 license: MIT
 user-invocable: true
 ---
 
-# GROW教练式思维模型引导器 v1.5
+# GROW教练式思维模型引导器 / GROW Coaching Thinking Model Guide v1.6
 
-> 🎯 **首次使用？** 查看 `assets/welcome-notification.md` 了解9大场景分类和常见使用场景
+> 🌐 **Bilingual Support / 双语支持**：本 Skill 支持中文和英文，自动检测用户语言并切换。
+> This Skill supports Chinese and English with automatic language detection.
+
+---
+
+## 〇、语言设置 / Language Settings（v1.6新增）
+
+### 语言自动检测规则
+
+**在每次对话开始时，按以下规则检测用户语言：**
+
+1. **用户输入语言**：检测用户首次输入的语言（中文/英文）
+2. **自动切换**：整个对话过程中使用检测到的语言
+3. **手动切换**：用户可随时通过命令切换语言
+
+### 语言切换命令
+
+| 命令 / Command | 功能 / Function |
+|---------------|----------------|
+| `/lang cn` 或 `/lang 中文` | 切换到中文模式 |
+| `/lang en` 或 `/lang English` | Switch to English mode |
+
+### 双语映射核心术语
+
+| 中文 | English |
+|-----|---------|
+| GROW模型 | GROW Model (Goal-Reality-Options-Will) |
+| 根因分析 | Root Cause Analysis (5 Whys) |
+| 二阶思维 | Second-Order Thinking |
+| 5W1H | 5W1H Framework |
+| 决策矩阵 | Decision Matrix |
+| 第一性原理 | First Principles Thinking |
+| 框架效应 | Framing Effect |
+| 沉没成本 | Sunk Cost Fallacy |
+| 确认偏误 | Confirmation Bias |
+| 飞轮效应 | Flywheel Effect |
+| 费曼学习法 | Feynman Technique |
+| 刻意练习 | Deliberate Practice |
+| 帕累托法则 | Pareto Principle (80/20) |
+| 博弈论 | Game Theory |
+| 护城河 | Economic Moat |
+| 成长型思维 | Growth Mindset |
+| 认知校准 | Cognitive Calibration |
+| 快速模式 | Fast Mode |
+| 标准模式 | Standard Mode |
+
+### 英文模式下的对话示例
+
+```
+User: I need to report a project delay to my leadership. How should I frame it?
+
+Skill: 📊 Detected scenario: [S08 Potential Release + S01 Cognitive Calibration]
+      Recommended model: Framing Effect
+      
+      ━━━ GROW Coaching Session ━━━
+      
+      [G Phase - Goal]
+      What is the primary outcome you want from this report?
+      ...
+```
 
 ---
 
@@ -630,6 +689,11 @@ R-1：事实层面
 - `references/model-combinations.md` — **模型组合推荐库**（12个经典组合+工作流+评估）（v1.5新增）
 - `assets/welcome-notification.md` — **用户欢迎提示**（9大场景分类+常见使用场景）
 
+### 英文文档（v1.6新增）
+- `references/en/thinking-models-library.md` — **English: 94 Curated Thinking Models** (with coaching steps)
+- `references/en/strategy-library.md` — **English: 9 Strategic Scenario Library** (with matching rules)
+- `references/en/model-combinations.md` — **English: 12 Classic Model Combinations** (with workflow & evaluation)
+
 ### 基础文档
 - `references/grow-model-guide.md` — GROW模型完整指南
 - `references/root-cause-analysis.md` — 根因分析操作手册
@@ -669,3 +733,4 @@ R-1：事实层面
 | **v1.3** | **9大策略场景、94个精选模型库、场景化推荐、训练记录、学习报告增强** |
 | **v1.4** | **可视化学习报告：9大场景雷达图、学习成长曲线、薄弱场景热力图** |
 | **v1.5** | **模型组合推荐：12个经典组合模板、组合工作流引导、组合效果评估** |
+| **v1.6** | **中英双语支持：自动语言检测、/lang切换命令、英文参考文档、英文README** |
