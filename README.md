@@ -1,3 +1,5 @@
+
+
 # 🧠 GROW教练式思维模型引导器
 
 <p align="right">
@@ -275,9 +277,9 @@ thinking-coach/
 │   └── auto-collect.py                   # 对话数据收集
 │
 └── assets/                               # 模板文件
-    ├── welcome-notification.md           # 用户欢迎提示
-    ├── user-profile-template.md          # 用户档案模板
-    ├── learning-report-template.md       # 学习报告模板
+    ├── report-template.md                # 汇报框架模板
+    ├── action-plan-template.md           # 改进计划模板
+    ├── checklist-template.md             # 检查清单模板
     └── ...
 ```
 
